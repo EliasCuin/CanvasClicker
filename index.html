@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id = "canvas"></canvas>
+
+    <script src="options.js"></script>
+    <script src="canvas.js"></script>
+    <script src="saveSystem.js"></script>
+    <script src="loadCookiesImages.js"></script>
+    <script src="cookieNumberAnimation.js"></script>
+    <script src="./shop/loadShop&Images.js"></script>
+    <script src="./shop/Cursor.js"></script>
+    <script src="./shop/Duck.js"></script>
+    <script src="CookieProSecondCounter.js"></script>
+    <script src="./shop/Factory.js"></script>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay" ></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>Enregistrer la partie</h1>
+        <p>Copie le code qui se trouve dans la TextBox!</p>
+        <textarea id="tb1" rows="1" cols="50">
+        </textarea>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup1()">&times;</div>
+        <h1>Importer une partie</h1>
+        <p>Inserte le code le tu avais obtenu lorsque tu as enregistré la partie.</p>
+        <textarea id="tb2" rows="1" cols="50"></textarea>
+        <button id = okbutton onclick="onOkbuttonclicked()" type="button">Importer</button> 
+        
+        </div>
+    </div>
+
+</body>
+</html>
